@@ -1,0 +1,76 @@
+//push:
+const array = [1, 2, 3];
+array.push(4); // [1, 2, 3, 4]
+
+//pop:
+const array = [1, 2, 3];
+const lastElement = array.pop(); // 3, array will be [1, 2]
+
+//shift:
+const array = [1, 2, 3];
+const firstElement = array.shift(); // 1, array will be [2, 3]
+
+//unshift:
+const array = [2, 3];
+array.unshift(1); // [1, 2, 3]
+
+//concat:
+const array1 = [1, 2];
+const array2 = [3, 4];
+const newArray = array1.concat(array2); // [1, 2, 3, 4]
+
+//slice:
+const array = [1, 2, 3, 4, 5];
+const slicedArray = array.slice(1, 4); // [2, 3, 4]
+
+//splice:
+const array = [1, 2, 3, 4, 5];
+array.splice(2, 1, "a", "b"); // [1, 2, 'a', 'b', 4, 5]
+
+//indexOf:
+const array = [1, 2, 3, 4, 5];
+const index = array.indexOf(3); // 2
+
+//lastIndexOf:
+const array = [1, 2, 3, 4, 3, 5];
+const lastIndex = array.lastIndexOf(3); // 4
+
+//forEach:
+const array = [1, 2, 3];
+array.forEach((element) => console.log(element));
+// Output: 1, 2, 3
+
+//map:
+const array = [1, 2, 3];
+const mappedArray = array.map((element) => element * 2); // [2, 4, 6]
+
+//filter:
+const array = [1, 2, 3, 4, 5];
+const filteredArray = array.filter((element) => element % 2 === 0); // [2, 4]
+
+//reduce:
+const array = [1, 2, 3, 4, 5];
+const sum = array.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  0
+); // 15
+
+//every:
+const array = [1, 2, 3, 4, 5];
+const allGreaterThanZero = array.every((element) => element > 0); // true
+
+//some:
+const array = [1, 2, 3, 4, 5];
+const hasEvenNumber = array.some((element) => element % 2 === 0); // true
+
+//find:
+const array = [1, 2, 3, 4, 5];
+const foundElement = array.find((element) => element > 3); // 4
+
+//findIndex:
+const array = [1, 2, 3, 4, 5];
+const foundIndex = array.findIndex((element) => element > 3); // 3
+
+//includes:
+const array = [1, 2, 3, 4, 5];
+const includesThree = array.includes(3); // true
