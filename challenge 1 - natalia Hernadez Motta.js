@@ -1,22 +1,23 @@
 // flecha
-const flecha =(number) => {
-    if (number % 2 === 0) {
-        console.log(number + " is even.");
-      } else {
-        console.log(number + " is odd.");
-      }
-    };
-
-number(5);
+const parOimparArrow = (number) => {
+    // %2 === resto de la divición entre el numero y 2
+  if (number % 2 == 0) {
+    console.log(number + " es par.");
+  } else {
+    console.log(number + " es impar.");
+  }
+};
+parOimparArrow(7);
+parOimparArrow(4);
 
 //Regular
+function parOimpar(number) {
+  if (number % 2 == 0) {
+    console.log(number + " es par.");
+  } else {
+    console.log(number + " es impar.");
+  }
+};
+parOimpar(3);
+parOimpar(8);
 
-function flecha (number) {
-    if (number % 2 === 0) {
-        console.log(number + " is even.");
-      } else {
-        console.log(number + " is odd.");
-      }
-    };
-
-number(4);
