@@ -4,11 +4,11 @@ array.push(4); // [1, 2, 3, 4]
 
 //pop:
 const array = [1, 2, 3];
-const lastElement = array.pop(); // 3, array will be [1, 2]
+const lastElement = array.pop(); 
 
 //shift:
 const array = [1, 2, 3];
-const firstElement = array.shift(); // 1, array will be [2, 3]
+const firstElement = array.shift(); 
 
 //unshift:
 const array = [2, 3];
@@ -38,7 +38,7 @@ const lastIndex = array.lastIndexOf(3); // 4
 //forEach:
 const array = [1, 2, 3];
 array.forEach((element) => console.log(element));
-// Output: 1, 2, 3
+
 
 //map:
 const array = [1, 2, 3];
