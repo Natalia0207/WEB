@@ -15,40 +15,18 @@ getPromesa(5, 1)
     });
 
 
-
-    const peticion =async(numberA, numberB)=>{
-        try{
-        int numberA;
-        int numberB,
-        const resp = await (numberA - numberB) >= 1));
-        const data = await ();
+        
+//Solución profe de Async-await:
+    const f2= async() =>{
+    const data = await fn(3,4);
+    console.log(data);
+    }catch(error){
+    consol.logconsole.log(error);
+    }}
+    f2();
         
         
-        
-        
-        ((numberA - numberB) >= 1) {
-                    resolve(numberA - numberB);
-                } else { reject("ERROR"); }
-        console.log(data;)
-        
-        }catch (error){
-        
-        
-        
-        
-        
-        //Solución profe:
-        const f2= async() =>{
-        const data = await fn(3,4);
-        console.log(data);
-        }catch(error){
-        consol.logconsole.log(error);
-        }}
-        f2();
-        
-        
-        
-        
+    
         
         const getPromesa = (numberA, numberB) => {
             return new Promise((resolve, reject) => {
