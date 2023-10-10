@@ -1,32 +1,34 @@
 import { useState, useEffect } from 'react';
-const useFetch = (url) => {
-  const [estado, setEstado] = useState({
-    datos: null,
-    cargando: true,
+const useCustomFetch = (url) => {
+  const [dataState, setDataState] = useState({
+    data: null,
+    loading: true,
     error: null,
   })
   useEffect(() => {
-    const obtenerDatos = async () => {
+    const fetchData = async () => {
       try {
-        const respuesta = await fetch(url)
-        if (!respuesta.ok) {
-          throw new Error('Error')
+        const response = await fetch(url)
+        if (!response.ok) {
+          throw new Error('Error de red')
         }
-        const datosObtenidos = await respuesta.json();
-        setEstado({
-          datos: datosObtenidos,
-          cargando: false,
+        const data = await response.json()
+        setDataState({
+          data: data,
+          loading: false,
           error: null,
         })
       } catch (error) {
-        setEstado({
-          datos: null,
-          cargando: false,
+        setDataState({
+          data: null,
+          loading: false,
           error: error.message,
-        } )
-      } }
-    obtenerDatos();
-  }, [url]);
-  return estado;
+        })
+      }
+    }
+    fetchData();
+  }, [url])
+  return dataState;
 }
-export default useFetch;
+export default useCustomFetch;
+
